@@ -1,0 +1,18 @@
+a:link {
+color: #16243d;
+padding: 2px;
+border-bottom: 1px dashed;
+}
+a:visited {
+color: #c0a6e1;
+}
+a:hover {
+color: #3d1334;
+text-decoration: none;
+
+background: #c669c9;
+}
+a:active {
+color: #497DDD;
+border-bottom: 1px dashed;
+}

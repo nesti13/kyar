@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <style>
+    .tran1{
+        width: 200px; 		 	
+        height: 100px; 
+        background-color: rgb(240, 119, 114); 
+        border: 2px solid #000;
+        text-align: center;
+        margin: 0 auto;
+        transition-duration: 500ms, 800ms; 
+        transition-property: width, height, background-color, border-radius;
+        transition-delay: 500ms, 800ms;
+    }
+    .tran1:hover {
+        width: 50%; 
+        height: 50%; 
+        background-color:rgb(132, 227, 240);
+        border-radius: 20px;
+    }
+    .tran2{
+        width: 200px; 			
+        height: 200px; 	
+        font-size: 2em; 
+        font-weight: bold; 	
+        text-align: center; 	
+        line-height: 200px; 
+        margin: 0 auto; 
+        color: green; 
+        background-color: yellow; 
+        border: 3px solid #000; 
+        transition-duration: 2s, 4s, 6s; 
+        transition-property: background-color, border-color, color; 
+    }
+    .tran2:hover {
+        background-color: #000; 
+        color: red; 
+        border-color: red; 
+    } 
+    .tran3{
+        width: 200px;
+        height: 200px;
+        background-color: #9e8fd3;
+        margin: 0 auto; 
+        position: relative;
+        left: 50px;
+        text-align: left; 
+    }
+    .tran3:hover{
+        left: -100px;
+    }
+    </style>
+    </head>
+    <body>
+        <div class="tran1">Переход1</div>
+        <br>
+        <div class="tran2">Переход2</div>
+        <br>
+        <div class="tran3"></div>
+    </body>
+</html>

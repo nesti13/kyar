@@ -1,0 +1,40 @@
+h1, h2, h3, span{
+	color: DarkViolet;
+    font-family: Helvetica;
+}
+@font-face {
+        font-family: Allura;
+        src: url('20170.ttf');
+}
+
+body{
+    background: url(https://wallpaperfx.com/view_image/the-shannara-chronicles-1024x1024-wallpaper-18414.jpg) right top no-repeat fixed;
+    background-size: 300px 250px;
+}
+.p1{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: right;
+    font-size: 15px;
+    word-spacing: 7px;
+    letter-spacing: 0.3px;
+    font-family: "Times New Roman", serif;
+    color: rgb(0,0,120);
+}
+#par2{
+    font: 18px Arial;
+    width:999px;
+    color: purple;
+}
+#par3{
+    text-align: justify;
+    font-size: small;
+    letter-spacing: 2px;
+    font: small Verdana;
+    color:#CC99FF;
+}
+h2{
+    text-shadow: 1px 1px 2px black, 0 0 1em rgba(77, 19, 28);
+    color: white;
+    font-size: 2em;
+}

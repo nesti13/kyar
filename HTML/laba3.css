@@ -1,0 +1,15 @@
+p:first-letter{
+	font-size: 1.5em;
+	padding: 2px 10px;
+	margin-right:5px;
+	background:#B0C4DE;
+	border: 6px double;
+	color:#7B68EE;
+	float: left;
+	font-weight: bold;
+}
+p:first-line{
+	font-style: italic;
+	text-decoration: underline;
+}
+p:first-child{color:#FF3300;}

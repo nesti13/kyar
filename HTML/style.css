@@ -1,0 +1,27 @@
+body
+{
+  background: url(фон.jpg) no-repeat center fixed;
+
+}
+.ball
+{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: #633f5f;
+    border-radius: 100%;
+    animation: dws-bounce 2s linear infinite,
+      dws-moveleft 15s linear infinite;
+}
+@keyframes dws-bounce{
+    0% {bottom: 100%; }
+    25% {bottom: 0; width:100px; height:100px; bsckground: #b94f84; }
+    30% {bottom: 0; width:110px; height:50px; background: rgb(212, 130, 188); }
+    35% {bottom: 0; width:100px; height:100px; }
+    70% {bottom: 100%; background: #994b72; }
+    100% {bottom: 100%; }
+}
+@keyframes dws-moveleft{
+    from {left: 0; }
+    to {left: 100%; }
+}
