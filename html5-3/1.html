@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<style type="text/css">
+</style>
+<script type="text/javascript">
+		function output(fullname, course, group, phone, email, mark) {
+			nameOutput.value=fullname.value;
+			courseOutput.value=course.value;
+			groupOutput.value=group.value;
+			numberOutput.value=phone.value;
+			mailOutput.value=email.value;
+		}
+	</script>
+<body>
+	<header>
+    <h1>Мой сайт</h1>
+    </header>
+	<nav>
+		<img src="pic.jpg" width="100px" height="70px">
+		<figcaption>Моя фотография</figcaption>
+	</nav>
+	<form oninput="output(fullname, course, group, phone, email, mark)">
+		<input name="fullname" type="name" placeholder="ФИО" autofocus required>
+		<input name="course" list="курс" placeholder="Выберите курс">
+		<datalist id="курс">
+			<option>1</option>
+			<option>2</option>
+			<option>3</option>
+			<option>4</option>
+		</datalist>
+		<input name="group" list="группа" placeholder="Выберите свою специальность">
+		<datalist id="группа">
+			<option>ИСИТ</option>
+			<option>ДЭВИ</option>
+			<option>ПОИТ</option>
+			<option>ПОИБМС</option>
+		</datalist>
+		<input name="phone" type="tel" placeholder="Укажите номер телефона" pattern="+375-[0-9]{3}-[0-9]{3}-[0-9]{4}">
+		<input name="email" type="email" placeholder="Укажите почту" pattern=".@gmail.com" size="30" multiple>
+		<input name="mark" type="number"  min="0" max="400"  placeholder="Баллы">
+		<input type="search" name="q" placeholder="Поиск по сайту">
+		<input type="submit" value="Найти"></p>
+		Выберите цвет:  <input type="color" id="head" name="head" value="#9932CC">
+		<p><input list="character">
+			<input id="datetime" type="datetime-local">
+			<datalist id="character">
+            <option value="A"></option>
+            <option value="B"></option>
+            <option value="C"></option>
+            </datalist></p>
+			<input type="submit" value="Отправить">
+	</form>
+	<footer>
+		<p>ФИО: <output id="nameOutput"></output></p>
+		<p>Курс: <output id="courseOutput"></output></p>
+		<p>Группа: <output id="groupOutput"></output></p>
+		<p>Номер телефона: <output id="numberOutput"></output></p>
+		<p>Электронная почта: <output id="mailOutput"></output></p>
+	</footer>
+</body>
+</html>

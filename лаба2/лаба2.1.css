@@ -1,0 +1,63 @@
+.b1 {
+    background-color: rgb(235, 192, 227);
+    font-family: "Times New Roman", Times, serif;
+    font-size: 14px;
+    color: rgb(34, 5, 39);
+    border-radius: 7px;
+    border: 1px solid rgb(33, 4, 35);
+    text-shadow: 2px 2px 3px rgb(109, 69, 111);
+}
+.b2{
+    background-color:rgb(187, 178, 187);
+    font-family: "Times New Roman", Times, serif;
+    font-size: 15px;
+    color: black;
+    text-shadow: 2px 2px 3px gray;
+    border-radius: 5px;
+}
+.b3{ 
+    font-weight: 700;
+    color: rgb(209,209,217);
+    text-shadow: 0 -1px 2px rgba(0,0,0,2);
+    padding: 2px 5px;
+    border-radius: 4px;
+    background: linear-gradient(rgb(110,112,120), rgb(81,81,86)) rgb(110,112,120);
+    box-shadow:
+    0 1px rgba(255,255,255,.2),
+    0 3px 5px rgba(0,1,6,.5),
+    0 0 1px 1px rgba(0,1,6,.2);
+    
+}
+.b4{
+    border: rgb(30, 3, 18) outset;
+    background-color: rgb(209,209,217);
+
+}
+.b5{
+    border: 2px groove rgb(0, 0, 0);
+    border-radius: 2px;
+    background-color:rgb(179, 218, 238);
+    font-family: "Times New Roman", Times, serif;
+    font-size: 15px;
+    color: rgb(38, 31, 84);
+    text-shadow: 2px 2px 3px gray;
+    box-shadow: 0 1px rgb(59, 53, 95),
+    0 3px 5px rgb(81,81,86);
+}
+.b6{
+    border-radius: 100px;
+    border: 1px solid rgb(29, 2, 17);
+    background:rgb(196, 50, 128);
+    color: rgb(241, 216, 229);
+}
+.b7{
+    background: black;
+    color: white;
+    border: 1px solid;
+    font-family: 'Montserrat', sans-serif;
+    border-left-color: rgb(235, 63, 11);
+    border-bottom-color: rgb(235, 63, 11);
+    border-top-color: rgb(255, 166, 0);
+    border-right-color: rgb(255, 166, 0);
+
+}

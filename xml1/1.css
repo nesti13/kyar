@@ -1,0 +1,40 @@
+spec
+{   
+    font-style:italic;
+    display:block;
+    text-align:center;
+    border-style:double;
+    border-color:#8C0088;
+    width: 500px}
+univer
+{ 
+    margin-top: 20px;
+    font-weight:bold;
+    display:block;
+    text-align:center;
+    border-style:double;
+    border-color:#8C0088;
+    text-align:center;
+    width: 500px}
+score
+{    
+    display:block;
+    text-align:center;
+    border-style:double;
+    border-color:#8C0088;
+    text-align:center;
+    width: 500px}
+plan
+{    display:block;
+    text-align:center;
+    border-style:double;
+    border-color:#8C0088;
+    text-align:center;
+    width: 500px}
+city
+{    display:block;
+    text-align:center;
+    border-style:double;
+    border-color:#8C0088;
+    text-align:center;
+    width: 500px}

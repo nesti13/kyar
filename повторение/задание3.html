@@ -1,0 +1,79 @@
+<html>
+<head>
+<style type='text/css'>
+#box {
+margin:0px;
+padding:15px;
+height:600px;
+background-color:Thistle;
+border-style: solid;
+border-color: rgb(8, 8, 8);
+}
+.ex1 {
+border:4px solid #483D8B;
+box-shadow: 3px 3px 5px #000000;
+width: 200px; 			
+height: 75px; 
+background-color:#FFF0F5;
+color:Indigo;
+font-family:"Courier New", Courier, monospace;
+text-align: center; 	
+}
+.ex2 {
+border:5px #7B68EE dotted;
+border-radius: 50px;
+margin-top:40px;
+margin-left: 500px;
+margin-right: 500px;
+padding: 5px;
+background-color:#F0F8FF;
+color:#696969;
+font: small Verdana 10px;
+line-height: 25px;
+text-align: center;
+}
+#box:hover .ex2{
+   background-color:rgb(152, 101, 167);
+   width: 100px;
+   height: 100px;
+   border-radius: 50px;
+   border: 7px rgb(17, 3, 13) ridge;
+   color:rgb(224, 170, 213);
+}
+#box:hover > .ex1, .ex2{
+background-color: rgb(2, 2, 2);
+width: 400px;
+height: 150px;
+border-radius: 20px;
+line-height: 55px;
+color: rgb(142, 188, 235);
+}
+.ex3 {
+border:10px #9400D3 ridge;
+border-radius: 50%;
+box-shadow: 2px 2px 4px #4B0082;
+width: 100px;
+height: 100px;
+padding:50px;
+background-color:#E6E6FA;
+color:#060308;
+line-height: 25px;
+text-align: center;
+transition: all 1s ease;
+animation: rotate 3s linear infinite;
+}
+@keyframes rotate {
+    from {
+      transform: rotate(-360deg);
+    }
+}
+</style>
+</head> 
+<body>
+<div id='box'>
+<div class='ex1'>Свобода не в том, чтоб не сдерживать себя, а в том, чтоб владеть собой.</div>
+<div class='ex2'>Freedom</div>
+<div class='ex3'>Лучшие мысли всегда приходят во тьме ночной</div>
+</div>
+</body> 
+</html>

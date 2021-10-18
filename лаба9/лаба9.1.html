@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <form>
+    <textarea id = 'text'>Перетащи меня</textarea>
+  </form>
+    <div id = 'pic'><img src = '3.jpg' width="100px" height="100px" ></div>
+<script language="JavaScript">
+  var text = document.getElementById('text');
+  text.onmousedown = function(transfer1) {
+  let shiftX = transfer1.clientX - text.getBoundingClientRect().left;
+  let shiftY = transfer1.clientY - text.getBoundingClientRect().top;
+  text.style.position = 'absolute';
+  text.style.zIndex = 1000;
+  document.body.append(text);
+  moveAt(transfer1.pageX, transfer1.pageY);
+      function moveAt(pageX, pageY) {
+  text.style.left = pageX - shiftX + 'px';
+  text.style.top = pageY - shiftY + 'px';
+      }
+      function onMouseMove(transfer1) {
+  moveAt(transfer1.pageX, transfer1.pageY);
+      }
+  document.addEventListener('mousemove', onMouseMove);
+  text.onmouseup = function() {
+  document.removeEventListener('mousemove', onMouseMove);
+  text.onmouseup = null;
+  };
+  };
+  text.ondragstart = function() {
+  return false;
+  };
+  var pic = document.getElementById('pic');
+      pic.onmousedown = function(transfer) {
+  var coords = getCoords(pic);
+  var shiftX = transfer.pageX - coords.left;
+  var shiftY = transfer.pageY - coords.top;
+  pic.style.position = 'absolute';
+  document.body.appendChild(pic);
+  moveAt(transfer);
+  pic.style.zIndex = 1000; 
+      function moveAt(transfer) {
+    pic.style.left = transfer.pageX - shiftX + 'px';
+    pic.style.top = transfer.pageY - shiftY + 'px';
+  }
+  document.onmousemove = function(transfer) {
+    moveAt(transfer);
+  };
+  pic.onmouseup = function() {
+    document.onmousemove = null;
+    pic.onmouseup = null;
+  };
+  }
+  pic.ondragstart = function() {
+  return false;
+  };
+      function getCoords(elem) {   
+  var box = elem.getBoundingClientRect();
+  return {
+    top: box.top + pageYOffset,
+    left: box.left + pageXOffset
+  };
+  }
+</script>
+</body>
+</html>

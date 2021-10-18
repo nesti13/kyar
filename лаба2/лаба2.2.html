@@ -1,0 +1,33 @@
+<html>
+<head>
+<style type="text/css">
+    table{
+        border-collapse: collapse;
+    } 
+    tr td{
+        border: solid 2px black;
+        padding: 15px;
+    }
+</style>
+</head>
+<body>
+<table>
+<script type='text/javascript'>
+let a, b;
+    a = prompt('Введите a:');
+    b = prompt('Введите b:');
+
+    document.write('<table>');
+        for (let i = 1; i <= a; i++) {
+    document.write('<tr>');
+        for (let j = 1; j <= b; j++) {
+    document.write('<td>' + i * j + '</td>');
+}
+    document.write('</tr>');
+}
+    document.write('</table>');
+    document.write('</br></br>');
+</script>
+</table>
+</body>
+</html>

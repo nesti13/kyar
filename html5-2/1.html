@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    </head>
+    <body>
+            <canvas id="drawgist" width="600" height="600"></canvas>
+            <canvas id="drawdiagr" width="600" height="700"></canvas>
+            <script type="text/javascript">
+                let canvas = document.getElementById("drawgist");
+                let x = canvas.getContext("2d");
+                x.beginPath()
+                x.moveTo(90, 55)
+                x.lineTo(90, 450)
+                x.moveTo(90, 450)
+                x.lineTo(400, 450)
+                x.closePath()
+                var grad = x.createLinearGradient(340,300,340,400);
+                grad.addColorStop(0.0,'#9400D3');
+                grad.addColorStop(1.0,'#B0C4DE');
+                x.fillStyle = grad
+                let h1 = 350; x.fillRect(125, h1, 50, 450-h1)
+                x.fillStyle = "#9932CC"
+                let h2 = 145; x.fillRect(210, h2, 50, 450-h2)
+                var img = new Image();
+                img.src = 'pattern.jpg';
+                img.onload = function() {
+                var pattern = x.createPattern(img, 'repeat');
+                x.fillStyle = pattern;
+                let h3 = 325; x.fillRect(290, h3, 50, 450-h3)
+                };
+                x.font='15px Arial';
+                x.fillStyle='black';
+                x.fillText("Годы", 5, 250);
+                x.fillText("Учебное заведение", 160, 510);
+                x.fillText("12", 55, 90);
+                x.fillText("9", 55, 180);
+                x.fillText("6", 55, 270);
+                x.fillText("3", 55, 360);
+                x.fillText("0", 55, 450);
+                x.fillText("Детский сад", 110, 480);
+                x.fillText("Школа", 210, 480);
+                x.fillText("Университет", 270, 480);
+                x.strokeStyle = "black"
+                x.stroke()
+                let canvas2 = document.getElementById("drawdiagr");
+                let y = canvas2.getContext("2d");
+                y.fillStyle='#BC8F8F';
+                y.beginPath();
+                y.arc(250, 200, 125, -Math.PI/180*90, 0, false);
+                y.lineTo(250, 200);
+                y.fill();
+                y.fillStyle='#DDA0DD';
+                y.beginPath();
+                y.arc(250, 200, 125, 0, Math.PI/180*15, false);
+                y.lineTo(250, 200);
+                y.fill();
+                y.fillStyle='#7B68EE';
+                y.beginPath();
+                y.arc(250, 200, 125, Math.PI/180*15, Math.PI/180*230, false);
+                y.lineTo(250, 200);
+                y.fill();
+                y.fillStyle='#FFEBCD';
+                y.beginPath();
+                y.arc(250, 200, 125, Math.PI/180*230, -Math.PI/180*90, false);
+                y.lineTo(250, 200);
+                y.fill();
+                y.font="15px Arial";
+                y.fillStyle="#BC8F8F";
+                y.fillText("остальное", 500, 160);
+                y.fillRect(480, 150, 15, 15);
+                y.font="15px Arial";
+                y.fillStyle="#DDA0DD";
+                y.fillText("дорога", 500, 180);
+                y.fillRect(480, 170, 15, 15);
+                y.font="15px Arial";
+                y.fillStyle="#7B68EE";
+                y.fillText("универ", 500, 200);
+                y.fillRect(480, 190, 15, 15);
+                y.font="15px Arial";
+                y.fillStyle="#FFEBCD";
+                y.fillText("сон", 500, 220);
+                y.fillRect(480, 210, 15, 15);
+                y.shadowOffsetX=5;
+                y.shadowOffsetY=5;
+                y.shadowBlur=7;
+                y.shadowColor="#191970";
+                y.font="25px Arial";
+                y.fillStyle="#483D8B";
+                y.fillText("Режим дня", 200, 20)
+            </script>
+        </canvas>
+    </body>
+</html>

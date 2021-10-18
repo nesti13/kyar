@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <input id = "input" type = "file" onchange = "processFiles(this.files)">
+    <div id = "output"></div>
+    <script>
+        let output = document.getElementById("output");
+        function processFiles(files) {
+        var file = files[0];
+        let xml;
+        var reader = new FileReader();
+        reader.onload = function (e) {
+        xml = e.target.result;
+        };
+        reader.readAsText(file);
+        setTimeout(() => {
+        let xmlDoc;
+        if (window.DOMParser) { 
+        let parser = new DOMParser();
+        xmlDoc = parser.parseFromString(xml, "text/xml");
+        } 
+        else {
+        xmlDoc = new ActiveXObject("Microsoft.XMLDOM");
+        xmlDoc.async = false;
+        xmlDoc.loadXML(txt);
+        } 
+        var x = prompt('Какого студента вывести?') - 1;
+        let facultyList = xmlDoc.getElementsByTagName("my")[0];
+        let university = facultyList.getElementsByTagName("stud");
+        for (var i = 0; i < university[x].childNodes.length; i++) {
+        if (university[x].childNodes[i].nodeType == 1) {
+        var faculty = university[x].childNodes[i].innerHTML;
+        output.innerHTML += faculty + "<br/>";
+        }
+        }
+        }, 10);
+        document.getElementById('input').value = '';
+        }
+    </script>
+    </head>
+    <body>
+    </body>
+</html>

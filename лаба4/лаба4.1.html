@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<script type="text/javascript">
+function Gruppa(n, spec, amount) {
+    this.n=n;
+    this.spec=spec;
+    this.amount=amount;
+    this.sub_stud=function sub_stud(k) {
+        this.amount-=k;
+        document.write('<br>Из группы исключили ' + k + ' студента.<br>');
+    }
+    this.add_stud=function add_stud(a) {
+        this.amount+=a;
+        document.write('<br>В группу добавили ' + a + ' студента.');
+    }    
+}
+let gr1=new Gruppa(1, ' ИСИТ ', 27);
+gr1.add_stud(2);
+gr1.sub_stud(1);
+Gruppa.prototype.kurs=this.kurs;
+gr1.kurs=1;
+document.write('Номер группы: ' + gr1.n + '; ' + 'специальность: ' + gr1.spec + '; ' + 'количество студентов: ' + gr1.amount +'; ' + 'курс: ' + gr1.kurs + '<br>');
+let gr2=new Gruppa(1, ' ПОИТ ', 29);
+gr2.add_stud(3);
+gr2.sub_stud(2);
+gr2.kurs=3;
+document.write('Номер группы: ' + gr2.n + '; ' + 'специальность: ' + gr2.spec + '; ' + 'количество студентов: ' + gr2.amount +'; ' + 'курс: ' + gr2.kurs + '<br>');
+let gr3=new Gruppa(3, ' ИСИТ ', 23);
+gr3.add_stud(2);
+gr3.sub_stud(3);
+gr3.kurs=1;
+document.write('Номер группы: ' + gr3.n + '; ' + 'специальность: ' + gr3.spec + '; ' + 'количество студентов: ' + gr3.amount +'; ' + 'курс: ' + gr3.kurs + '<br>');
+let gr4=new Gruppa(3, ' ПОИТ ', 25);
+gr4.add_stud(3);
+gr4.sub_stud(4);
+gr4.kurs=3;
+document.write('Номер группы: ' + gr4.n + '; ' + 'специальность: ' + gr4.spec + '; ' + 'количество студентов: ' + gr4.amount +'; ' + 'курс: ' + gr4.kurs);
+</script>
+<body>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <form name='form'>
+            <textarea name='fit' style="font-weight: bold">Факультет информационных технологий</textarea><br>
+            <br><input name='SecondName' type='text' value ='Фамилия' />
+            <br/>
+            <input name='FirstName' type='text'  value='Имя'/>
+            <p><b>Специальность:</b>
+            <select name='spec'>
+                <option value="ИСиТ">ИСиТ</option>
+                <option value="ПОИТ">ПОИТ</option>
+                <option value="ПОИБМС">ПОИБМС</option>
+                <option value="ДЭВИ">ДЭВИ</option>
+            </select></p>
+            <b><p>Курс:</p>
+            <input type='radio' name='kurs' value='1' />1
+            <input type='radio' name='kurs' value='2' />2 
+            <input type='radio' name='kurs' value='3' />3
+            <input type='radio' name='kurs' value='4' />4</b> 
+            <b><p>Предметы:</p>
+            <input type='checkbox' name='space' value='ОИТ' id='oit' />ОИТ
+            <input type='checkbox' name='space' value='ОАП' id='oap' />ОАП 
+            <input type='checkbox' name='space' value='История' id='hist' />История  
+            <input type='checkbox' name='space' value='Физика' id='ph' />Физика 
+            <input type='checkbox' name='space' value='Математика' id='math' />Математика</b><br>
+            <input type="submit" name="send" value="submit"/>
+            <input type="reset" name="send" value="reset"/><br><br/>
+            <input type="button" value='Задание 4' onclick='lista()' />
+            <input type="button" value='Напечатать' onclick='FormNames()' />
+            
+        </form>
+        
+            <script>
+                function FormNames()
+                {
+                    let FormName = document.forms.form;
+                    let FitElem = form.elements.fit;
+                    let SecondNameElem = form.elements.SecondName;
+                    let SpecElem = form.elements.spec;
+                    let KursElem = form.elements.kurs;
+                    let SpaceElem = form.elements.space;
+                    document.write(FitElem.value);
+                    document.write("</br>Студент " + SecondNameElem.value + ' специальность ' + SpecElem.value + ' курс ' + KursElem.value + ' должен сдавать следующие предметы: ');
+                    document.write('<ul>');
+                        for(let i = 0; i < SpaceElem.length; i++) {
+                            if (SpaceElem[i].checked) {
+                                document.write('<li>' + SpaceElem[i].value + '</li>');
+                            }
+                        }
+                        document.write('</ul>');
+                }
+                function lista() {
+                    let first = document.getElementById('oit');
+                    let second = document.getElementById('oap');
+                    let third = document.getElementById('hist');
+                    let fourth = document.getElementById('ph');
+                    let fifth = document.getElementById('math');
+                    let add = document.getElementById('oit2');
+                        if(first.checked){first.value;
+                    var str = document.createTextNode(first.value);
+                    add.appendChild(str);}
+                    add =document.getElementById('oap2');
+                        if(second.checked){second.value;
+                    str = document.createTextNode(second.value);
+                    add.appendChild(str);};
+                    add =document.getElementById('hist2');
+                        if(third.checked){third.value;
+                    str = document.createTextNode(third.value);
+                    add.appendChild(str);
+                }
+                    add =document.getElementById('ph2')
+                        if(fourth.checked){fourth.value;
+                    str = document.createTextNode(fourth.value);
+                    add.appendChild(str);
+                };
+                    add =document.getElementById('math2');
+                        if(fifth.checked){
+                    str = document.createTextNode(fifth.value);
+                    add.appendChild(str);
+                };
+                };
+            </script>
+            <form>
+                <select name='list'>
+                    <option id='oit2' value=""></option>
+                    <option id='oap2' value=""></option>
+                    <option id='hist2' value=""></option>
+                    <option id='ph2' value=""></option>
+                    <option id='math2' value=""></option>
+                </select>
+            </form>
+    </body>
+</html>

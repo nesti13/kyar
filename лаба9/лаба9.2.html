@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<style type="text/css">
+	#img1 {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100px;
+        height: 100px;
+        }
+</style>
+<body>
+<img src="3.jpg"  id="img1" >
+<script>
+var curPosX = 0;
+var curPosY = 0;
+var interval;
+var n = 10; 
+var width = document.documentElement.clientWidth; 
+var height = document.documentElement.clientHeight; 
+var imgWidth = 100; 
+var imgHeight = 100; 
+var img1 = document.getElementById("img1");
+function move() {
+  img1.style.left = (curPosX += n) + "px";
+  img1.style.top = (curPosY += n) + "px";
+  if ((curPosX == (width - imgWidth)) || (curPosY == (height - imgHeight))) {
+    clearInterval(interval);
+  }
+}
+interval = setInterval(move, 100);
+</script>
+</body>
+</html>

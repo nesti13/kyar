@@ -1,0 +1,8 @@
+<!DOCTYPE my [
+<!ELEMENT my (univer,spec,score,plan,city)>
+<!ELEMENT univer (#PCDATA)>
+<!ELEMENT spec (#PCDATA)>
+<!ELEMENT score (#PCDATA)>
+<!ELEMENT plan (#PCDATA)>
+<!ELEMENT city (#PCDATA)>
+]>

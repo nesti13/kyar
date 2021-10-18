@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+    function pic(id){
+    if (document.getElementById(id).src.indexOf("pic1.jpg")>0){
+    document.getElementById(id).src="pic2.jpg"
+    }else{
+    document.getElementById(id).src="pic1.jpg"
+    }
+    }
+    </script>
+    <img src="pic1.jpg" id="img_1" onClick="pic(this.id)">
+</script>
+</body>
+</html>
+    

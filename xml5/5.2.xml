@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl"?>
+<my>
+<stud>
+<surname>Кнехель</surname>
+<name>Магдалена</name>
+<fname>Андреевна</fname>
+<score>9</score>
+<year>2003</year>
+</stud>
+<stud>
+<surname>Мак'Кензи</surname>
+<name>Александр</name>
+<fname>Дмитриевич</fname>
+<score>6</score>
+<year>2002</year>
+</stud>
+</my>

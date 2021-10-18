@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl"?>
+<my>
+<stud>
+<surname>Николаева</surname>
+<name>Евгения</name>
+<fname>Владимировна</fname>
+<score>9</score>
+<year>2002</year>
+</stud>
+<stud>
+<surname>Жоголь</surname>
+<name>Анастасия</name>
+<fname>Андреевна</fname>
+<score>10</score>
+<year>2002</year>
+</stud>
+<stud>
+<surname>Александрович</surname>
+<name>Егор</name>
+<fname>Александрович</fname>
+<score>5</score>
+<year>2002</year>
+</stud>
+</my>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW 2017 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="210mm" height="297mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 21000 29700"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .str0 {stroke:#26252d; stroke-width:23}
+    .fil0 {fill:none}
+   ]]>
+  </style>
+    <clipPath id="id0">
+     <path d="M4812 8158l12452 0 0 11649 -12452 0 0 -11649z"/>
+    </clipPath>
+    <clipPath id="id1">
+     <path d="M10637 8403c930,-64 1744,259 3442,1280 -537,43 -188,783 1382,3132 -1570,-715 -1919,28 -1381,3150 -1699,-2038 -2512,-1694 -3442,1347 -869,-3031 -1685,-3362 -3458,-1303 595,-3133 232,-3876 -1427,-3150 1659,-2367 2022,-3109 1427,-3149 1773,-1034 2589,-1366 3457,-1307z"/>
+    </clipPath>
+ </defs>
+ <g id="Слой_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g id="_1602287741904">
+   <g style="clip-path:url(#id0)">
+    <image x="4812" y="8158" width="12452" height="11649" xlink:href="2.2_Images\2.2_ImgID1.png"/>
+   </g>
+  </g>
+  <g>
+   <g style="clip-path:url(#id1)">
+    <image x="5753" y="8396" width="9708" height="8916" xlink:href="2.2_Images\2.2_ImgID2.png"/>
+   </g>
+   <path class="fil0 str0" d="M10637 8403c930,-64 1744,259 3442,1280 -537,43 -188,783 1382,3132 -1570,-715 -1919,28 -1381,3150 -1699,-2038 -2512,-1694 -3442,1347 -869,-3031 -1685,-3362 -3458,-1303 595,-3133 232,-3876 -1427,-3150 1659,-2367 2022,-3109 1427,-3149 1773,-1034 2589,-1366 3457,-1307z"/>
+  </g>
+ </g>
+</svg>

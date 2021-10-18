@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<script type="text/javascript">
+document.write('<b>Удаление свойств объекта (delete)</b>' + '<br>');
+let spec = new Array();
+spec[0] = "Monday";
+spec[1] = "Tuesday";
+spec[2] = "Wednesday";
+spec[3] = "Thursday";
+spec[4] = "Friday";
+spec[5] = "Saturday";
+spec[6] = "Sunday";
+document.write(spec);
+delete spec[3];
+document.write('<br>' + spec + '<br>');
+document.write(1 in spec);
+document.write('<br>' + '<b>Проверка наличия свойств (in)</b>');
+function Gruppa(n, spec, amount) {
+    this.n=n;
+    this.spec=spec;
+    this.amount=amount;
+    this.sub_stud=function sub_stud(k) {
+        this.amount-=k;
+        document.write('<br>Из группы исключили ' + k + ' студента.<br>');
+    }
+    this.add_stud=function add_stud(a) {
+        this.amount+=a;
+        document.write('<br>В группу добавили ' + a + ' студента.');
+    }    
+}
+let gr1=new Gruppa(1, ' ИСИТ ', 27);
+gr1.add_stud(2);
+gr1.sub_stud(1);
+Gruppa.prototype.kurs=this.kurs;
+gr1.kurs=1;
+document.write('Номер группы: ' + gr1.n + '; ' + 'специальность: ' + gr1.spec + '; ' + 'количество студентов: ' + gr1.amount +'; ' + 'курс: ' + gr1.kurs + '<br>');
+let gr2=new Gruppa(1, ' ПОИТ ', 29);
+gr2.add_stud(3);
+gr2.sub_stud(2);
+gr2.kurs=3;
+document.write('Номер группы: ' + gr2.n + '; ' + 'специальность: ' + gr2.spec + '; ' + 'количество студентов: ' + gr2.amount +'; ' + 'курс: ' + gr2.kurs + '<br>');
+document.write('spec' in gr1);
+document.write('<br>');
+document.write('math' in gr2);
+document.write('<br>');
+function Student(name, surname, physics, math, informatics) {
+    this.name=name;
+    this.surname=surname;
+    this.physics=physics;
+    this.math=math;
+    this.informatics=informatics;
+    this.writename=function writename()
+    {
+        document.write("Имя и фамилия студента: " + this.name + this.surname + '.');
+    } 
+        let sr;
+    this.sr=function sr() {
+        document.write("Cредний балл: " + (Math.round((this.physics + this.math + this.informatics) / 3)));
+    }    
+}
+let s1=new Student('Herman', ' Hofmann', 7, 8, 9);
+let s2=new Student('Stefan', ' Wagner', 8, 9, 10);
+let s3=new Student('Alex', ' Weber', 9, 9, 8);
+let s4=new Student('Lea', ' Müller', 8, 10, 10);
+s1.writename();
+Student.prototype.kurs=this.kurs;
+s1.kurs=2;
+s2.kurs=3;
+s3.kurs=3;
+s4.kurs=4;
+document.write(" Kурс: "+s1.kurs+". ");
+s1.sr();
+document.write("<br/>")
+s2.writename();
+document.write(" Курс: "+s2.kurs+". ");
+s2.sr();
+document.write("<br/>")
+s3.writename();
+document.write(" Курс: "+s3.kurs+". ");
+s4.sr();
+document.write("<br/>")
+s4.writename();
+document.write(" Курс: "+s4.kurs+". ");
+s4.sr();
+document.write('<br>');
+document.write('spec' in gr1);
+document.write('<br>');
+document.write('string' in gr1);
+document.write('<br>');
+document.write('<b>Проверка принадлежности объекта модели (instanceof)</b>' + '<br>');
+document.write(spec instanceof Array);
+let mystring = new String ("Hallo!");
+document.write('<br>');
+document.write(mystring instanceof String);
+let student = {
+    name: "Alex",
+    surname: "Luthor"
+};
+document.write('<br>');
+document.write(student instanceof Object);
+document.write('<br>');
+document.write('<b>Определение типа (typeof)</b>' + '<br>');
+function func() {
+    return 5;
+}
+document.write (func() + '<br>');
+document.write(typeof func());
+document.write('<br>');
+document.write(typeof spec);
+document.write('<br>');
+document.write(typeof Gruppa);
+document.write('<br>');
+document.write(typeof Student);
+</script>
+<body>
+</body>
+</html>

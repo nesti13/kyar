@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <script>
+        function getCoordinates() {
+        navigator.geolocation.getCurrentPosition(showCoordinates);
+        }
+        function showCoordinates(position) {
+        document.write("Широта:" + position.coords.latitude + "<br/>");
+        document.write("Долгота:" + position.coords.longitude); 
+        }
+        </script>
+    </head>
+    <body>
+        <h1 align="center">Я, <mark>Колядко Яна Дмитриевна</mark>, изучаю <span class="colortext">HTML5</span></h1>
+        <br>
+        <video src="tili-tili-bom.mp4" width="300" height="200" controls="controls"></video>  
+        <br>
+        <audio src="fiksiki.mp3" controls="controls"> </audio>
+        <br>
+        <p>Узнать координаты</p>
+        <input type="button" value="Координаты" onclick="getCoordinates()">
+    </body>
+</html>

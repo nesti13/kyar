@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="1.css"?>
+<my>
+<my1>
+<univer>БГТУ</univer>
+<spec>Программное обеспечение информационной безопасности мобильных систем</spec>
+<score>300</score>
+<plan>60</plan>
+<city>Минск</city>
+</my1>
+<my1>
+<univer>БГУИР</univer>
+<spec>Программируемые мобильные системы</spec>
+<score>331</score>
+<plan>60</plan>
+<city>Минск</city>
+</my1>
+<my1>
+<univer>БГУ</univer>
+<spec>Математическое и программное обеспечение мобильных устройств</spec>
+<score>331</score>
+<plan>60</plan>
+<city>Минск</city>
+</my1>
+</my>
